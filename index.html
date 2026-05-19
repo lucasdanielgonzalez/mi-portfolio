@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Daniel Gonzalez | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    </head>
+
+          <body id="inicio">
+            <header>
+       <nav>
+        <div class="logo"></div> 
+    <ul>
+        <li><a href="#sobre-mi">SOBRE MI</a></li>
+        <li><a href="#proyectos">PROYECTOS</a></li>
+        <li><a href="#tecnologias">TECNOLOGIAS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+    </nav>
+
+        <div class="hero-container">
+            <div class="hero-text">
+                <p class="greeting">HOLA, SOY</p>
+                <h1>Lucas Daniel Gonzalez</h1>
+                <p class="tagline">Analista de Sistemas | Backend Developer</p>
+                <p class="summary">
+                    Técnico Superior Analista de sistemas enfocado en el desarrollo backend con <strong>Python y Django</strong>.
+                </p>
+                <div class="hero-actions">
+                    <a href="archivos/CV_Lucas_Gonzalez.pdf" class="btn-gradient">Descargar CV</a>
+                    <a href="https://github.com/lucasdanielgonzalez" target="_blank" class="btn-outline">Ver GitHub</a>
+                    <a href="https://www.linkedin.com/in/lucas-daniel-gonzalez-489b521b2/" target="_blank" class="btn-outline">LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <img src="imagenes/foto.png" alt="Lucas Daniel Gonzalez" class="img-fluid">
+            </div>
+        </div>
+    </header>
+
+  <section id="sobre-mi" class="sobre-mi-section">
+    <div class="container-mini">
+        <h2 style="color: white;">Sobre mí</h2>
+        <div class="sobre-mi-contenido">
+        <p>
+         <strong>Analista de Sistemas</strong> egresado del Instituto Tecnologico Beltran. Mi formación académica me brindó bases en lógica de programación, bases de datos y desarrollo web. Tras recibirme, especialicé mi perfil en el <strong>ecosistema Backend</strong> mediante una certificación intensiva en <strong>Python y Django</strong>.
+        </p>
+        <p>
+         Actualmente, me enfoco en la arquitectura de servidores y la gestión de datos, utilizando <strong>Git y GitHub</strong> para un flujo de trabajo profesional.
+        </p>
+        <p>
+         Mi objetivo es seguir escalando mis habilidades tanto en el Back como en el Front, buscando soluciones integrales que aporten valor real a equipos de desarrollo.
+        </p>
+        </div>
+    </div>
+</section>
+
+    <section id="proyectos">
+        <h2>PROYECTOS DESTACADOS</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="imagenes/Logic CV.png" alt="Logic CV" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                <h3>Logic CV</h3>
+                <p>Generador de currículums con Django. Procesa datos dinámicos mediante formularios intuitivos para exportar perfiles profesionales estructurados.
+                Enfocado en la arquitectura de datos y eficiencia del Backend.</p>
+                <a href="https://github.com/lucasdanielgonzalez/logic-cv" target="_blank" rel="nooopener nore ferrer" class="btn">Ver Repositorio</a>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/inicio.png" alt="Hotel Paraiso" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                <h3>Gestión Hotelera</h3>
+                <p>Sistema de reservas con Python y Django. Implementa lógica CRUD/ABM, autenticación de usuarios y persistencia en SQLite.
+                 Proyecto final integral para Coderhouse.</p>
+                <a href="https://github.com/lucasdanielgonzalez/ServicioHotel-GonzalezLucas" target="_blank" rel="nooopener nore ferrer" class="btn">Ver Repositorio</a>
+            </div>
+           <div class="card">
+            <img src="imagenes/Calculadora.png" alt="Calculadora de Presupuesto" style="width: 100%; border-radius: 8px;">
+            <h3>Calculadora de Presupuesto</h3>
+            <p>Aplicación web para la gestión de finanzas personales. Procesa datos numéricos de entrada para calcular la distribución del presupuesto, optimizar gastos y proyectar el saldo disponible en tiempo real.</p>
+            <a href="https://github.com/lucasdanielgonzalez/angular-presupuesto" target="_blank" rel="nooopener nore ferrer" class="btn">Ver Repositorio</a>
+        </div>
+        </div>
+    </section>
+
+<section id="tecnologias">
+    <h2 style="color: white; text-align: center; margin-bottom: 40px;">Tecnologías</h2>
+    
+    <div class="stack-grid">
+        <!-- Tarjeta Backend -->
+        <div class="stack-card">
+            <h3>Desarrollo Backend</h3>
+            <div class="tech-tags-organizadas">
+                <span>Python</span>
+                <span>SQLITE</span>
+            </div>
+        </div>
+
+        <!-- Tarjeta Frontend -->
+        <div class="stack-card">
+            <h3>Desarrollo Frontend</h3>
+            <div class="tech-tags-organizadas">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Angular</span>
+            </div>
+        </div>
+
+        <!-- Tarjeta Herramientas -->
+        <div class="stack-card">
+            <h3>Herramientas</h3>
+            <div class="tech-tags-organizadas">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Trello</span>
+            </div>
+        </div>
+
+        <div class="stack-card">
+            <h3>framework</h3>
+            <div class="tech-tags-organizadas">
+                <span>Django</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN DE CONTACTO: Centrado Forzado -->
+<section id="contacto">
+    <h2>CONTACTO</h2>
+    <div class="card" style="max-width: 600px; margin: 0 auto; padding: 40px 20px; text-align: center;">
+        <h3>¿Hablamos?</h3>
+        <p style="color: var(--texto-blanco); opacity: 0.8; margin-bottom: 20px;">
+            ¿Te interesa mi perfil o querés comentar una idea de proyecto? Podés escribirme y te respondo a la brevedad.
+        </p>
+
+        <div style="margin-bottom: 25px; font-size: 1.1rem; line-height: 1.8;">
+            <p style="margin: 5px 0;"><strong style="color: #007bff;">lucasdanielgonzalez@gmail.com</strong></p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <a href="mailto:lucasdanielgonzalez@gmail.com?subject=Contacto%20Desde%20Portfolio" class="btn" style="text-decoration: none; display: inline-block; margin-top: 20px;">📩 Enviar email</a>
+        </div>
+    </div>
+</section>
+
+    <footer>
+      <p>&copy; 2026 Lucas Daniel Gonzalez - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+    <a href="javascript:void(0)" class="back-to-top"> ↑ </a>
+</body> 
+
+<script>
+    const btnArriba = document.querySelector('.back-to-top');
+
+    window.onscroll = function() {
+        // Probamos con dos formas de medir el scroll por las dudas
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btnArriba.classList.add('show');
+        } else {
+            btnArriba.classList.remove('show');
+        }
+    };
+
+    // Mantenemos tu función de click
+    btnArriba.onclick = function(e) {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+</script>
+</html>
