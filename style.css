@@ -306,28 +306,88 @@ footer {
     .hero-container {
         flex-direction: column-reverse;
         text-align: center;
-        margin: 40px auto;
+        /* Achicamos el margen superior de 40px a 15px para eliminar el bloque negro vacío en el celu */
+        margin: 15px auto 40px auto;
+        padding: 0 5%;
+        gap: 25px;
     }
     .hero-text h1 {
         font-size: 2.5rem;
     }
+    
+    /* SOLUCIÓN AL APILADO DE BOTONES PEGADOS: */
     .hero-actions {
+        display: flex;
+        flex-direction: column; /* Apila los botones uno abajo del otro */
         justify-content: center;
+        align-items: center;
+        gap: 12px; /* Les da una separación limpia y uniforme */
+        width: 100%;
     }
+    /* Hace que los botones tengan un tamaño uniforme y cómodo para tocar con el dedo */
+    .btn-gradient, .btn-outline {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
     .hero-photo img {
         width: 220px;
         height: 220px;
     }
     .sobre-mi-section {
         text-align: center;
+        padding: 40px 8%;
     }
     .sobre-mi-section h2 {
         text-align: center;
     }
 }
 
+/* NUEVA SECCIÓN RESPONSIVA: Específica para pantallas de celulares */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr !important; /* Fuerza a los proyectos a ponerse en una sola columna */
+        padding: 0 5%;
+        gap: 20px;
+    }
+
+    /* SOLUCIÓN A LAS IMÁGENES ESTIRADAS/DEFORMADAS: */
+    .card img {
+        width: 100%;
+        height: auto; /* Evita que se estire artificialmente */
+        max-height: 180px; /* Le pone un tope de altura prolijo */
+        object-fit: cover; /* Recorta la captura manteniendo la proporción original */
+        border-radius: 8px;
+    }
+}
+
 html {
     scroll-behavior: smooth !important;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--degradado);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 .back-to-top {
